@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sa.example.sutvirtualtour">
+
     <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,7 +22,16 @@
         <activity
             android:name=".CameraOverlay"
             android:label="@string/title_activity_camera_overlay"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_map"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name=".Pop_Detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme">
+        </activity>
     </application>
 
 </manifest>
